@@ -1,0 +1,26 @@
+<!-- note: Meteor automatically adds HTML tags and so forth -->
+
+<head>
+   <title>Leaderboard</title>
+</head>
+
+<body>
+
+   <h1>Leaderboard</h1> {{> leaderboard}}
+   <!-- This makes the leaderboard template, created below, show 
+   "{{" is Meteor's own language called a Spacebars tag
+   the ">" means we want to include the template-->
+</body>
+
+<!--Create a template for the Meteor application  -->
+<template name="leaderboard">
+   <ul>
+      {{#each player}}
+      <li class="player {{selectedClass}}">{{name}}: {{score}}</li>
+      {{/each}}
+   </ul>
+   <input type="button" class="increment" value="Add 5 Points" />
+   <input type="button" class="decrement" value="Subtract 5 Points" />
+
+   <p>Player Count = {{playerCount}}</p>
+</template>

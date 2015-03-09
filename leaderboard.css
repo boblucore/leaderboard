@@ -1,0 +1,33 @@
+/* CSS declarations go here */
+
+body {
+   max-width: 400px;
+   border: 5px solid gray;
+   font-family: sans-serif;
+   margin: 10px auto;
+   border-radius: 10px;
+}
+
+h1,
+p {
+   background-color: SteelBlue;
+   color: white;
+   margin: auto;
+   text-align: center;
+   padding: .3em 0 .3em 0;
+}
+
+ul {
+   list-style: none;
+   padding-left: 5%;
+   padding-right: 10%;
+}
+
+.selected {
+   background-color: #e8eff7;
+}
+
+.increment {
+   margin: 0 0 5% 5%;
+   padding: 0 0 5% 5%;
+}
